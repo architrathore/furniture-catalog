@@ -59,3 +59,10 @@ To add new pieces, simply edit `data.yaml` and append a new block following this
 ```
 
 Refresh the page, and the new item will automatically be compiled into the gallery and the filter logic!
+
+## Live Deployment
+
+This project is configured to automatically deploy to GitHub Pages.
+- **Link**: [https://architrathore.github.io/furniture-catalog/](https://architrathore.github.io/furniture-catalog/) *(Note: replace `architrathore` with your username if you forked this)*
+
+To deploy changes to the live site, simply commit and push your updates to the `main` or `master` branch. The included GitHub Actions workflow (`.github/workflows/pages.yml`) will automatically build and publish the changes.
