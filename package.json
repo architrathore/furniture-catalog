@@ -1,0 +1,17 @@
+{
+  "name": "furniture-catalog",
+  "version": "1.0.0",
+  "description": "A premium, interactive, and responsive web catalog designed to present a handpicked collection of formal living room furniture. Built entirely with vanilla web technologies to eliminate build-step friction while maintaining a luxurious aesthetic.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.13.5",
+    "cheerio": "^1.0.0-rc.12",
+    "js-yaml": "^4.1.1"
+  }
+}
