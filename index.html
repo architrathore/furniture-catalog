@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Furniture Catalog Deck</title>
+    <meta
+      name="description"
+      content="A curated presentation deck of premium furniture options for the formal living room."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- Sticky Cart Wrapper -->
+    <div class="cart-sticky-wrapper">
+      <button id="btn-open-cart" class="btn-cart">
+        <span>Cart</span>
+        <span id="cart-badge" class="badge hidden">0</span>
+      </button>
+    </div>
+
+    <div class="theme-selector">
+      <label for="theme-select">Theme:</label>
+      <select id="theme-select">
+        <option value="dark">Luxurious Dark</option>
+        <option value="light">Minimalist Light</option>
+        <option value="mcm">Mid-Century Modern</option>
+        <option value="cyberpunk">Neon Cyberpunk</option>
+        <option value="brutalist">Raw Brutalism</option>
+        <option value="vaporwave">Vaporwave Dream</option>
+        <option value="matrix">Matrix Terminal</option>
+        <option value="hotdog">Hotdog Stand</option>
+      </select>
+    </div>
+
+    <div class="app-container">
+      <header class="header">
+        <h1>Curated Collection</h1>
+        <p>
+          A handpicked selection of premium furniture pieces for your formal
+          living room.
+        </p>
+
+        <div class="filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="sofa">Sofas</button>
+          <button class="filter-btn" data-filter="chair">Chairs</button>
+          <button class="filter-btn" data-filter="coffee-table">
+            Coffee Tables
+          </button>
+        </div>
+      </header>
+      <main class="gallery-grid" id="gallery"></main>
+    </div>
+
+    <!-- Floating Bar -->
+    <div id="compare-bar" class="compare-bar hidden">
+      <div class="compare-bar-content">
+        <span id="compare-count">0 items selected</span>
+        <button id="btn-compare" class="btn-primary" disabled>Compare</button>
+        <button id="btn-clear" class="btn-secondary">Clear</button>
+      </div>
+    </div>
+
+    <!-- Comparison Modal -->
+    <div id="compare-modal" class="modal hidden">
+      <div class="modal-content">
+        <button id="btn-close-modal" class="btn-close">&times;</button>
+        <h2>Comparison</h2>
+        <div id="compare-table-container" class="table-container"></div>
+      </div>
+    </div>
+
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="modal hidden">
+      <div class="modal-content modal-cart">
+        <button id="btn-close-cart" class="btn-close">&times;</button>
+        <h2>Your Cart</h2>
+        <div id="cart-container" class="cart-container"></div>
+        <div class="cart-summary">
+          <span class="cart-total-label">Total:</span>
+          <span id="cart-total-price" class="cart-total-price">$0.00</span>
+        </div>
+        <div class="cart-actions">
+          <button id="btn-clear-cart" class="btn-secondary">Clear Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
